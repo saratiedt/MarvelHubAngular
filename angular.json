@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "MarvelHubAngular"
+  "defaultProject": "MarvelHubAngular",
+  "cli": {
+    "analytics": "ff3a4cfd-0cfc-4f86-b148-2c280e03ab67"
+  }
 }
