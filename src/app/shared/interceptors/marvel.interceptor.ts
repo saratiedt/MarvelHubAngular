@@ -20,9 +20,7 @@ export class MarvelInterceptor implements HttpInterceptor {
 
     const timestamp: number = Math.floor(Date.now() / 1000);
     const stringToEncrypt = timestamp.toString() + environment.marvel_api_private_key + environment.marvel_api_public_key;
-    console.log(stringToEncrypt);
     const hash: string = Md5.hashStr(stringToEncrypt);
-    console.log(hash);
 
     return request.clone({
       setParams: {
