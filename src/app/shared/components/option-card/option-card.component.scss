@@ -1,0 +1,32 @@
+.option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  border: 1px solid #29292e;
+  border-radius: 5px;
+
+  box-shadow: 0 3px 3px #c0c0c0;
+
+  cursor: pointer;
+
+  will-change: transform;
+  transition: transform .1s;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: transform .1s;
+  }
+
+  img {
+    height: 10em;
+  }
+
+  span.description {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
