@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   routes = {
-    characters: { url: ['characters'] }
+    characters: { url: ['characters'] },
+    comics: { url: ['comics'] },
+    stories: { url: ['stories'] }
   };
 
   constructor() { }
