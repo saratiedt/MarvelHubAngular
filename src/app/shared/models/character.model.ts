@@ -1,3 +1,4 @@
+import { ImageModel } from './image.model';
 import { ResourceModel } from './resource.model';
 import { UrlModel } from './url.model';
 
@@ -8,7 +9,7 @@ export type CharacterModel = {
   modified: Date;
   resourceURI: string;
   urls: UrlModel[];
-  thumbnail: string;
+  thumbnail: ImageModel;
   comics: ResourceModel;
   stories: ResourceModel;
   events: ResourceModel;
