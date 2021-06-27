@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { OptionCardComponent } from './shared/components/option-card/option-card.component';
 import { CharactersComponent } from './characters/characters.component';
 import { CharacterCardComponent } from './shared/components/character-card/character-card.component';
+import { CharacterPageComponent } from './characters/character-page/character-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CharacterCardComponent } from './shared/components/character-card/chara
     HeaderComponent,
     OptionCardComponent,
     CharactersComponent,
-    CharacterCardComponent
+    CharacterCardComponent,
+    CharacterPageComponent
   ],
   imports: [
     BrowserModule,

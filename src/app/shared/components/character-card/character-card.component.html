@@ -1,4 +1,4 @@
-<div class="character-card">
+<div class="character-card" (click)="goToCharacterPage()">
   <img [src]="character.thumbnail.path + '.' + character.thumbnail.extension">
   <div class="char-data">
     <span class="character-name">{{character.name}}</span>
