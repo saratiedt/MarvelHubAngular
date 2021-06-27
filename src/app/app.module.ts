@@ -12,6 +12,9 @@ import { OptionCardComponent } from './shared/components/option-card/option-card
 import { CharactersComponent } from './characters/characters.component';
 import { CharacterCardComponent } from './shared/components/character-card/character-card.component';
 import { CharacterPageComponent } from './characters/character-page/character-page.component';
+import { ComicsComponent } from './comics/comics.component';
+import { ComicPageComponent } from './comics/comic-page/comic-page.component';
+import { ComicCardComponent } from './shared/components/comic-card/comic-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CharacterPageComponent } from './characters/character-page/character-pa
     OptionCardComponent,
     CharactersComponent,
     CharacterCardComponent,
-    CharacterPageComponent
+    CharacterPageComponent,
+    ComicsComponent,
+    ComicPageComponent,
+    ComicCardComponent
   ],
   imports: [
     BrowserModule,

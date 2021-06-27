@@ -1,0 +1,10 @@
+.comics-wrapper {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 1rem .666rem;
+
+  comic-card {
+    width: calc((100% - 2rem - 12px) / 5);
+  }
+}

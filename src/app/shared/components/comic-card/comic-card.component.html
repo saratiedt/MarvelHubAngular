@@ -1,0 +1,7 @@
+<div class="comic-card" (click)="goToComicPage()">
+  <img [src]="comic.thumbnail.path + '.' + comic.thumbnail.extension">
+  <div class="char-data">
+    <span class="comic-name">{{comic.title}}</span>
+    <span class="comic-description">{{comic.description}}</span>
+  </div>
+</div>
