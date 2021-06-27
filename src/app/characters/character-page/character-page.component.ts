@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { CharacterModel } from 'src/app/shared/models/character.model';
-import { ResponseModel } from 'src/app/shared/models/response.model';
 import { CharacterService } from 'src/app/shared/services/character.service';
 
 @Component({
@@ -17,7 +15,6 @@ export class CharacterPageComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
     private characterService: CharacterService
   ) { }
 
