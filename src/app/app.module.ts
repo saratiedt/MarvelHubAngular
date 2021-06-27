@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { OptionCardComponent } from './shared/components/option-card/option-card.component';
+import { CharactersComponent } from './characters/characters.component';
+import { CharacterCardComponent } from './shared/components/character-card/character-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { OptionCardComponent } from './shared/components/option-card/option-card
     FooterComponent,
     HomeComponent,
     HeaderComponent,
-    OptionCardComponent
+    OptionCardComponent,
+    CharactersComponent,
+    CharacterCardComponent
   ],
   imports: [
     BrowserModule,

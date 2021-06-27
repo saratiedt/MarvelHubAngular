@@ -1,10 +1,12 @@
 <header>
 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/800px-Marvel_Logo.svg.png" alt="Logo Marvel">
+  <a [routerLink]="['']">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/800px-Marvel_Logo.svg.png" alt="Logo Marvel">
+  </a>
 
   <nav>
-    <a href="">Personagens</a>
-    <a href="">Quadrinhos</a>
-    <a href="">Histórias</a>
+    <a [routerLink]="['/characters']">Personagens</a>
+    <a [routerLink]="['/comics']">Quadrinhos</a>
+    <a [routerLink]="['/stories']">Histórias</a>
   </nav>
 </header>

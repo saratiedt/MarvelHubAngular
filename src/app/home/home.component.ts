@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  routes = {
+    characters: { url: ['characters'] }
+  };
+
   constructor() { }
 
   ngOnInit(): void {

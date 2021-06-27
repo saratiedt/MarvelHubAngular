@@ -1,0 +1,34 @@
+.character-card {
+  display: flex;
+
+  height: 120px;
+
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+
+  img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 100%;
+    max-width: 33%;
+  }
+
+  .char-data {
+    display: flex;
+    flex-direction: column;
+    max-width: 67%;
+    padding: 1rem;
+
+    span.character-name {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    span.character-description {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 100%;
+      white-space: nowrap;
+    }
+  }
+}

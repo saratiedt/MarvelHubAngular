@@ -1,0 +1,10 @@
+.characters-wrapper {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  character-card {
+    width: calc((100% - 2rem - 12px) / 5);
+  }
+}
