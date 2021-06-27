@@ -27,8 +27,19 @@ header {
       transition: color .3s;
 
       &:hover {
-        color: #F30112;
         transition: color .3s;
+
+        &.characters {
+          color: #C7965A;
+        }
+
+        &.comics {
+          color: #D04447;
+        }
+
+        &.stories {
+          color: #6A69AC;
+        }
       }
     }
   }

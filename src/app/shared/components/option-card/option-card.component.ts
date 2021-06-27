@@ -13,7 +13,7 @@ type RouteModel = {
 export class OptionCardComponent implements OnInit {
 
   @Input() title = '';
-  @Input() img = 'iron-man';
+  @Input() img = '';
   @Input() route: RouteModel = {url: ['']};
 
   constructor(
@@ -24,7 +24,6 @@ export class OptionCardComponent implements OnInit {
   }
 
   goToRoute(): void {
-    console.log('arguments');
     this.router.navigate(this.route.url);
   }
 
