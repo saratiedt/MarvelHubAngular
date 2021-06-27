@@ -5,10 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MarvelInterceptor } from './shared/interceptors/marvel.interceptor';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { OptionCardComponent } from './shared/components/option-card/option-card.component';
+import { CharactersComponent } from './characters/characters.component';
+import { CharacterCardComponent } from './shared/components/character-card/character-card.component';
+import { CharacterPageComponent } from './characters/character-page/character-page.component';
+import { ComicsComponent } from './comics/comics.component';
+import { ComicPageComponent } from './comics/comic-page/comic-page.component';
+import { ComicCardComponent } from './shared/components/comic-card/comic-card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    HomeComponent,
+    HeaderComponent,
+    OptionCardComponent,
+    CharactersComponent,
+    CharacterCardComponent,
+    CharacterPageComponent,
+    ComicsComponent,
+    ComicPageComponent,
+    ComicCardComponent
   ],
   imports: [
     BrowserModule,

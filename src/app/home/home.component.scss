@@ -1,0 +1,19 @@
+.home-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 24px 0;
+
+  text-align: center;
+
+  h3 {
+    margin-top: 1em;
+    line-height: 1em;
+  }
+
+  .main-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+}

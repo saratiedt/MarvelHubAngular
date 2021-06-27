@@ -1,0 +1,9 @@
+<div class="comic-page-wrapper" *ngIf="comic">
+  <img [src]="comic.thumbnail?.path + '.' + comic.thumbnail?.extension" alt="" class="comic-image">
+
+  <div class="comic-content">
+    <h1 class="comic-title">{{comic.title}}</h1>
+    <span class="comic-description">{{comic.description}}</span>
+
+  </div>
+</div>
