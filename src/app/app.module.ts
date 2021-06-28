@@ -8,12 +8,12 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { OptionCardComponent } from './shared/components/option-card/option-card.component';
 import { CharactersComponent } from './characters/characters.component';
 import { CharacterPageComponent } from './characters/character-page/character-page.component';
 import { ComicsComponent } from './comics/comics.component';
 import { ComicPageComponent } from './comics/comic-page/comic-page.component';
 import { ListItemCardComponent } from './shared/components/list-item-card/list-item-card.component';
+import { HomeOptionCardComponent } from './home/home-option-card/home-option-card.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +21,12 @@ import { ListItemCardComponent } from './shared/components/list-item-card/list-i
     FooterComponent,
     HomeComponent,
     HeaderComponent,
-    OptionCardComponent,
     CharactersComponent,
     CharacterPageComponent,
     ComicsComponent,
     ComicPageComponent,
-    ListItemCardComponent
+    ListItemCardComponent,
+    HomeOptionCardComponent
   ],
   imports: [
     BrowserModule,

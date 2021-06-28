@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OptionCardComponent } from './option-card.component';
+import { HomeOptionCardComponent } from './home-option-card.component';
 
-describe('OptionCardComponent', () => {
-  let component: OptionCardComponent;
-  let fixture: ComponentFixture<OptionCardComponent>;
+describe('HomeOptionCardComponent', () => {
+  let component: HomeOptionCardComponent;
+  let fixture: ComponentFixture<HomeOptionCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OptionCardComponent ]
+      declarations: [ HomeOptionCardComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OptionCardComponent);
+    fixture = TestBed.createComponent(HomeOptionCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
