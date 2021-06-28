@@ -10,7 +10,7 @@
 
     <div class="sequence-events">
       <div class="event" *ngIf="event.previous">
-        <h3>Evento predecessor</h3>
+        <h3>Evento anterior</h3>
         <button (click)="goToEvent(event.previous.resourceURI)">{{event.previous.name}}</button>
       </div>
       <div class="event" *ngIf="event.next">
