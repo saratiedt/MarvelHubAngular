@@ -1,7 +1,7 @@
 @import 'src/assets/scss/variables.scss';
 
 header {
-  height: 80px;
+  min-height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@ header {
 
   background-color: $header-background;
 
-  a {
+  & > a {
     display: flex;
 
     img {
@@ -48,5 +48,19 @@ header {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  header > nav > a{
+    font-size: .9rem;
   }
 }
