@@ -5,5 +5,19 @@
     <h1 class="event-title">{{event.title}}</h1>
     <span class="event-description">{{event.description}}</span>
 
+    <span class="start-date">Início do evento em {{event.start | date}}</span>
+    <span class="end-date">Fim do evento em {{event.end | date}}</span>
+
+    <div class="sequence-events">
+      <div class="event" *ngIf="event.previous">
+        <h3>Evento predecessor</h3>
+        <button (click)="goToEvent(event.previous.resourceURI)">{{event.previous.name}}</button>
+      </div>
+      <div class="event" *ngIf="event.next">
+        <h3>Evento posterior</h3>
+        <button (click)="goToEvent(event.next.resourceURI)">{{event.next.name}}</button>
+      </div>
+    </div>
+
   </div>
 </div>

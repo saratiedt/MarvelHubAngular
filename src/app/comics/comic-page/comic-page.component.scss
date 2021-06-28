@@ -1,7 +1,10 @@
+@import 'src/assets/scss/variables.scss';
+
 .comic-page-wrapper {
   display: flex;
 
   img {
+    max-height: 80vh;
     max-width: 25%;
   }
 
@@ -13,11 +16,33 @@
       line-height: 100%;
     }
 
+    a.marvel-ref {
+      font-size: .9rem;
+      color: white;
+      font-weight: 600;
+
+      &:hover {
+        color: $color-yellow;
+      }
+    }
+
     span {
       display: block;
       margin-top: 1rem;
 
       font-weight: 400;
+    }
+
+    .previews {
+      .previews-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        img {
+          max-height: 25vh;
+        }
+      }
     }
   }
 }
@@ -35,6 +60,20 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      a.marvel-ref {
+        margin-top: 1rem;
+        font-size: 1rem;
+      }
+
+      .previews > .previews-wrapper {
+        justify-content: center;
+        
+        img {
+          max-height: unset;
+          max-width: 80vw;
+        }
+      } 
     }
   }
 }
