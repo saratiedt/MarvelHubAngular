@@ -1,4 +1,10 @@
 <div class="comics-wrapper" *ngIf="(comics$ | async) as comics">
-  <app-comic-card *ngFor="let comic of comics.data.results"
-    [comic]="comic"></app-comic-card>
+  <app-list-item-card 
+    *ngFor="let comic of comics.data.results"
+    [title]="comic.title"
+    [description]="comic.description"
+    [imgSrc]="comic.thumbnail?.path + '.' + comic.thumbnail?.extension"
+    [itemId]="comic.id"
+    [routeUrl]="['comics/' + comic.id]"
+  ></app-list-item-card>
 </div>

@@ -4,32 +4,32 @@
   flex-wrap: wrap;
   gap: .666rem;
 
-  app-character-card {
+  app-list-item-card {
     max-height: 132px;
     width: 19%;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  app-character-card {
+  .characters-wrapper app-list-item-card {
     width: 24%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  app-character-card {
+  .characters-wrapper app-list-item-card {
     width: 30%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  app-character-card {
+  .characters-wrapper app-list-item-card {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  app-character-card {
+  .characters-wrapper app-list-item-card {
     width: 100%;
   }
 }

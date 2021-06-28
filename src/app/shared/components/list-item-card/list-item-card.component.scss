@@ -1,6 +1,6 @@
 @import 'src/assets/scss/variables';
 
-.character-card {
+.item-card {
   display: flex;
 
   height: 100%;
@@ -18,24 +18,36 @@
     max-width: 40%;
   }
 
-  .char-data {
+  .item-data {
     display: flex;
     flex-direction: column;
     max-width: 67%;
     padding: 1rem;
 
-    span.character-name {
+    span.item-name {
       font-size: 1.2rem;
       font-weight: 700;
       line-height: 1.2rem;
     }
 
-    span.character-description {
+    span.item-description {
       text-overflow: ellipsis;
       overflow: hidden;
       max-width: 100%;
       white-space: nowrap;
       font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .item-card > .item-data {
+    span.item-name {
+      font-size: .9rem;
+    }
+
+    span.item-description {
+      font-size: .8rem;
     }
   }
 }

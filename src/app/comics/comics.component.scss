@@ -4,32 +4,33 @@
   flex-wrap: wrap;
   gap: .666rem;
 
-  app-comic-card {
+  app-list-item-card {
     max-height: 132px;
     width: 19%;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .comics-wrapper app-comic-card {
+  .comics-wrapper app-list-item-card {
     width: 24%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .comics-wrapper app-comic-card {
+  .comics-wrapper app-list-item-card {
     width: 30%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .comics-wrapper app-comic-card {
+  .comics-wrapper app-list-item-card {
+    height: 145px;
     width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .comics-wrapper app-comic-card {
+  .comics-wrapper app-list-item-card {
     width: 100%;
   }
 }
