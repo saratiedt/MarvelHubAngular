@@ -12,7 +12,7 @@ export type EventModel = {
   modified:	Date;
   start:	Date;
   end:	Date;
-  thumbnail:	ImageModel[];
+  thumbnail:	ImageModel;
   comics:	ResourceModel;
   stories:	ResourceModel;
   series:	ResourceModel;

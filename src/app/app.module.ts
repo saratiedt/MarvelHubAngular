@@ -14,6 +14,8 @@ import { ComicsComponent } from './comics/comics.component';
 import { ComicPageComponent } from './comics/comic-page/comic-page.component';
 import { ListItemCardComponent } from './shared/components/list-item-card/list-item-card.component';
 import { HomeOptionCardComponent } from './home/home-option-card/home-option-card.component';
+import { EventsComponent } from './events/events.component';
+import { EventsPageComponent } from './events/events-page/events-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { HomeOptionCardComponent } from './home/home-option-card/home-option-car
     ComicsComponent,
     ComicPageComponent,
     ListItemCardComponent,
-    HomeOptionCardComponent
+    HomeOptionCardComponent,
+    EventsComponent,
+    EventsPageComponent
   ],
   imports: [
     BrowserModule,

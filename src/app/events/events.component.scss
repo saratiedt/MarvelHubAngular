@@ -1,0 +1,35 @@
+.events-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: .666rem;
+
+  app-list-item-card {
+    max-height: 132px;
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .events-wrapper app-list-item-card {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .events-wrapper app-list-item-card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .events-wrapper app-list-item-card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .events-wrapper app-list-item-card {
+    width: 100%;
+  }
+}

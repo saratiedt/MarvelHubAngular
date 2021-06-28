@@ -1,0 +1,10 @@
+<div class="events-wrapper" *ngIf="(events$ | async) as events">
+  <app-list-item-card 
+    *ngFor="let comic of events.data.results"
+    [title]="comic.title"
+    [description]="comic.description"
+    [imgSrc]="comic.thumbnail?.path + '.' + comic.thumbnail?.extension"
+    [itemId]="comic.id"
+    [routeUrl]="['events/' + comic.id]"
+  ></app-list-item-card>
+</div>
