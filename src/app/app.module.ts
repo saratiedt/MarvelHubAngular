@@ -16,6 +16,7 @@ import { ListItemCardComponent } from './shared/components/list-item-card/list-i
 import { HomeOptionCardComponent } from './home/home-option-card/home-option-card.component';
 import { EventsComponent } from './events/events.component';
 import { EventsPageComponent } from './events/events-page/events-page.component';
+import { LoadingComponent } from './shared/components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { EventsPageComponent } from './events/events-page/events-page.component'
     ListItemCardComponent,
     HomeOptionCardComponent,
     EventsComponent,
-    EventsPageComponent
+    EventsPageComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

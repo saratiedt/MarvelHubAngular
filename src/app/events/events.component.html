@@ -1,4 +1,4 @@
-<div class="events-wrapper" *ngIf="(events$ | async) as events">
+<div class="events-wrapper" *ngIf="(events$ | async) as events; else loader">
   <app-list-item-card 
     *ngFor="let comic of events.data.results"
     [title]="comic.title"
@@ -8,3 +8,7 @@
     [routeUrl]="['events/' + comic.id]"
   ></app-list-item-card>
 </div>
+
+<ng-template #loader>
+  <app-loading></app-loading>
+</ng-template>
