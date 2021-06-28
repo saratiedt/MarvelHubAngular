@@ -20,3 +20,20 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .character-page-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 80%;
+    }
+
+    .character-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

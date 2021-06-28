@@ -7,3 +7,9 @@
     min-height: calc(100vh - 4rem - 48px);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main-content main {
+    padding: 1rem 1rem calc(1rem + 48px);
+  }
+}

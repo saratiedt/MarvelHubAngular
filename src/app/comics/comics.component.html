@@ -1,4 +1,4 @@
 <div class="comics-wrapper" *ngIf="(comics$ | async) as comics">
-  <app-comic-card [style.width]="'calc((100% - 2rem - 12px) / 5)'" *ngFor="let comic of comics.data.results"
+  <app-comic-card *ngFor="let comic of comics.data.results"
     [comic]="comic"></app-comic-card>
 </div>

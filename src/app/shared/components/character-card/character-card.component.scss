@@ -1,9 +1,11 @@
+@import 'src/assets/scss/variables';
+
 .character-card {
   display: flex;
 
   height: 100%;
 
-  border: 1px solid #c3c3c3;
+  background-color: $color-orange;
   border-radius: 5px;
 
   cursor: pointer;
@@ -24,7 +26,8 @@
 
     span.character-name {
       font-size: 1.2rem;
-      font-weight: 400;
+      font-weight: 700;
+      line-height: 1.2rem;
     }
 
     span.character-description {
@@ -32,6 +35,7 @@
       overflow: hidden;
       max-width: 100%;
       white-space: nowrap;
+      font-weight: 400;
     }
   }
 }
