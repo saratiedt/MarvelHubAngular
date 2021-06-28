@@ -1,10 +1,11 @@
-.comic-card {
+@import 'src/assets/scss/variables';
+
+.item-card {
   display: flex;
 
   height: 100%;
-  max-height: calc(100% - 1rem);
 
-  border: 1px solid #c3c3c3;
+  background-color: $color-orange;
   border-radius: 5px;
 
   cursor: pointer;
@@ -17,22 +18,36 @@
     max-width: 40%;
   }
 
-  .char-data {
+  .item-data {
     display: flex;
     flex-direction: column;
     max-width: 67%;
     padding: 1rem;
-    
-    span {
+
+    span.item-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.2rem;
+    }
+
+    span.item-description {
       text-overflow: ellipsis;
       overflow: hidden;
       max-width: 100%;
       white-space: nowrap;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .item-card > .item-data {
+    span.item-name {
+      font-size: .9rem;
     }
 
-    span.comic-name {
-      font-size: 1.2rem;
-      font-weight: 400;
+    span.item-description {
+      font-size: .8rem;
     }
   }
 }

@@ -8,13 +8,15 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { OptionCardComponent } from './shared/components/option-card/option-card.component';
 import { CharactersComponent } from './characters/characters.component';
-import { CharacterCardComponent } from './shared/components/character-card/character-card.component';
 import { CharacterPageComponent } from './characters/character-page/character-page.component';
 import { ComicsComponent } from './comics/comics.component';
 import { ComicPageComponent } from './comics/comic-page/comic-page.component';
-import { ComicCardComponent } from './shared/components/comic-card/comic-card.component';
+import { ListItemCardComponent } from './shared/components/list-item-card/list-item-card.component';
+import { HomeOptionCardComponent } from './home/home-option-card/home-option-card.component';
+import { EventsComponent } from './events/events.component';
+import { EventsPageComponent } from './events/events-page/events-page.component';
+import { LoadingComponent } from './shared/components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { ComicCardComponent } from './shared/components/comic-card/comic-card.co
     FooterComponent,
     HomeComponent,
     HeaderComponent,
-    OptionCardComponent,
     CharactersComponent,
-    CharacterCardComponent,
     CharacterPageComponent,
     ComicsComponent,
     ComicPageComponent,
-    ComicCardComponent
+    ListItemCardComponent,
+    HomeOptionCardComponent,
+    EventsComponent,
+    EventsPageComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

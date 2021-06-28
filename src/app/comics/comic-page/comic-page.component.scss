@@ -21,3 +21,20 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .comic-page-wrapper {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 80%;
+    }
+
+    .comic-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

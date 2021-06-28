@@ -1,4 +1,4 @@
-.characters-wrapper {
+.events-wrapper {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -11,25 +11,25 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .characters-wrapper app-list-item-card {
+  .events-wrapper app-list-item-card {
     width: 24%;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .characters-wrapper app-list-item-card {
+  .events-wrapper app-list-item-card {
     width: 30%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .characters-wrapper app-list-item-card {
+  .events-wrapper app-list-item-card {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .characters-wrapper app-list-item-card {
+  .events-wrapper app-list-item-card {
     width: 100%;
   }
 }

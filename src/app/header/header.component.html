@@ -1,12 +1,12 @@
 <header>
 
   <a [routerLink]="['']">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/800px-Marvel_Logo.svg.png" alt="Logo Marvel">
+    <img src="assets/images/marvel-logo.svg" alt="Logo Marvel">
   </a>
 
   <nav>
-    <a [routerLink]="['/characters']">Personagens</a>
-    <a [routerLink]="['/comics']">Quadrinhos</a>
-    <a [routerLink]="['/stories']">Histórias</a>
+    <a class="characters" [routerLink]="['/characters']">Personagens</a>
+    <a class="comics" [routerLink]="['/comics']">Quadrinhos</a>
+    <a class="events" [routerLink]="['/events']">Eventos</a>
   </nav>
 </header>

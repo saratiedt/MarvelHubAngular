@@ -1,16 +1,22 @@
+@import 'src/assets/scss/variables.scss';
+
 header {
-  height: 80px;
+  min-height: 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
 
-  box-shadow: 0 1px .5em #C0C0C0;
+  background-color: $header-background;
 
-  img {
-    align-self: center;
-    max-height: 40px;
+  & > a {
+    display: flex;
+
+    img {
+      align-self: center;
+      max-height: 40px;
+    }
   }
 
   nav {
@@ -22,14 +28,39 @@ header {
       font-weight: 700;
       letter-spacing: 0.01em;
       text-decoration: none;
-      color: #3c3c3c;
+      color: $color-font-secondary;
 
       transition: color .3s;
 
       &:hover {
-        color: #F30112;
         transition: color .3s;
+
+        &.characters {
+          color: $color-yellow;
+        }
+
+        &.comics {
+          color: $color-red;
+        }
+
+        &.events {
+          color: $color-purple;
+        }
       }
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  header > nav > a{
+    font-size: .9rem;
   }
 }

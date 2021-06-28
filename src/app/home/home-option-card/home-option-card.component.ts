@@ -6,15 +6,15 @@ type RouteModel = {
 };
 
 @Component({
-  selector: 'app-option-card',
-  templateUrl: './option-card.component.html',
-  styleUrls: ['./option-card.component.scss']
+  selector: 'app-home-option-card',
+  templateUrl: './home-option-card.component.html',
+  styleUrls: ['./home-option-card.component.scss']
 })
-export class OptionCardComponent implements OnInit {
+export class HomeOptionCardComponent implements OnInit {
 
   @Input() title = '';
-  @Input() img = 'iron-man';
-  @Input() route: RouteModel = {url: ['']};
+  @Input() img = '';
+  @Input() route: RouteModel = { url: [''] };
 
   constructor(
     private router: Router
@@ -24,7 +24,6 @@ export class OptionCardComponent implements OnInit {
   }
 
   goToRoute(): void {
-    console.log('arguments');
     this.router.navigate(this.route.url);
   }
 

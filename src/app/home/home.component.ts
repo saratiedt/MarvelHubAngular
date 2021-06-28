@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
   routes = {
     characters: { url: ['characters'] },
     comics: { url: ['comics'] },
-    stories: { url: ['stories'] }
+    events: { url: ['events'] }
   };
 
   constructor() { }

@@ -1,10 +1,36 @@
 .comics-wrapper {
   display: flex;
-  align-self: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1rem .666rem;
+  gap: .666rem;
 
-  comic-card {
-    width: calc((100% - 2rem - 12px) / 5);
+  app-list-item-card {
+    max-height: 132px;
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .comics-wrapper app-list-item-card {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .comics-wrapper app-list-item-card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comics-wrapper app-list-item-card {
+    height: 145px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .comics-wrapper app-list-item-card {
+    width: 100%;
   }
 }
