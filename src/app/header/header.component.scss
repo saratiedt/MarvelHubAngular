@@ -1,3 +1,5 @@
+@import 'src/assets/scss/variables.scss';
+
 header {
   height: 80px;
   width: 100%;
@@ -6,11 +8,15 @@ header {
   align-items: center;
   padding: 2rem;
 
-  box-shadow: 0 1px .5em #C0C0C0;
+  background-color: $header-background;
 
-  img {
-    align-self: center;
-    max-height: 40px;
+  a {
+    display: flex;
+
+    img {
+      align-self: center;
+      max-height: 40px;
+    }
   }
 
   nav {
@@ -22,7 +28,7 @@ header {
       font-weight: 700;
       letter-spacing: 0.01em;
       text-decoration: none;
-      color: #3c3c3c;
+      color: $color-font-secondary;
 
       transition: color .3s;
 
@@ -30,15 +36,15 @@ header {
         transition: color .3s;
 
         &.characters {
-          color: #C7965A;
+          color: $color-yellow;
         }
 
         &.comics {
-          color: #D04447;
+          color: $color-red;
         }
 
         &.stories {
-          color: #6A69AC;
+          color: $color-purple;
         }
       }
     }

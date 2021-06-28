@@ -1,3 +1,5 @@
+@import 'src/assets/scss/variables.scss';
+
 .option-card {
   display: flex;
   flex-direction: column;
@@ -5,10 +7,10 @@
 
   padding: 1rem 2rem;
 
-  border: 1px solid #29292e;
   border-radius: 5px;
 
-  box-shadow: 0 3px 3px #c0c0c0;
+  background-color: $color-orange;
+  box-shadow: 4px 4px #555;
 
   cursor: pointer;
 
@@ -28,5 +30,7 @@
     margin-top: 2rem;
     font-size: 1.2rem;
     font-weight: 400;
+    color: white;
+    font-weight: 700;
   }
 }
