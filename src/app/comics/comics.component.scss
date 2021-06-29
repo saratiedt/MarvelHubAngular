@@ -1,0 +1,41 @@
+app-search {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.comics-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: .666rem;
+
+  app-list-item-card {
+    height: 112px;
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .comics-wrapper app-list-item-card {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .comics-wrapper app-list-item-card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comics-wrapper app-list-item-card {
+    height: 145px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .comics-wrapper app-list-item-card {
+    width: 100%;
+  }
+}

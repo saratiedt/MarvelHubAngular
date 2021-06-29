@@ -1,0 +1,16 @@
+<app-search (searchEvent)="searchForCharacter($event)"></app-search>
+
+<div class="characters-wrapper" *ngIf="(characters$ | async) as characters; else loader">
+  <app-list-item-card 
+    *ngFor="let character of characters.data.results"
+    [title]="character.name"
+    [description]="character.description"
+    [imgSrc]="character.thumbnail?.path + '.' + character.thumbnail?.extension"
+    [itemId]="character.id"
+    [routeUrl]="['characters/' + character.id]"
+  ></app-list-item-card>
+</div>
+
+<ng-template #loader>
+  <app-loading></app-loading>
+</ng-template>

@@ -1,0 +1,66 @@
+@import 'src/assets/scss/variables.scss';
+
+header {
+  min-height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  background-color: $header-background;
+
+  & > a {
+    display: flex;
+
+    img {
+      align-self: center;
+      max-height: 40px;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 16px;
+
+    a {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      color: $color-font-secondary;
+
+      transition: color .3s;
+
+      &:hover {
+        transition: color .3s;
+
+        &.characters {
+          color: $color-yellow;
+        }
+
+        &.comics {
+          color: $color-red;
+        }
+
+        &.events {
+          color: $color-purple;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  header > nav > a{
+    font-size: .9rem;
+  }
+}

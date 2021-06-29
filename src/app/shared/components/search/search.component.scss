@@ -1,0 +1,33 @@
+:host {
+  display: block;
+}
+
+.search-wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  height: 50px;
+  max-width: 300px;
+
+  padding: .5rem;
+
+  background-color: white;
+  border-radius: 4px;
+
+  input#search {
+    border: none;
+    margin-right: 1rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    max-width: 80%;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}
