@@ -21,4 +21,8 @@ export class ComicsComponent implements OnInit {
   ngOnInit(): void {
     this.comics$ = this.comicService.list();
   }
+
+  searchForComic(search: string): void {
+    this.comics$ = this.comicService.searchForComic(search);
+  }
 }

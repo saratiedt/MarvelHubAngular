@@ -19,6 +19,8 @@ import { HomeOptionCardComponent } from './home/home-option-card/home-option-car
 import { EventsComponent } from './events/events.component';
 import { EventsPageComponent } from './events/events-page/events-page.component';
 import { LoadingComponent } from './shared/components/loading/loading.component';
+import { SearchComponent } from './shared/components/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 registerLocaleData(localeBr, 'pt_BR');
 @NgModule({
@@ -35,12 +37,14 @@ registerLocaleData(localeBr, 'pt_BR');
     HomeOptionCardComponent,
     EventsComponent,
     EventsPageComponent,
-    LoadingComponent
+    LoadingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     {
