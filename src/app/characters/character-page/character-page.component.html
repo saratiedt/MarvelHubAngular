@@ -5,7 +5,7 @@
     <h1 class="character-name">{{character.name}}</h1>
     <span class="character-description">{{character.description || 'Descrição indisponível'}}</span>
 
-    <span class="character-modified">Última modificação em {{character.modified | date}}</span>
+    <span class="character-modified" *ngIf="character.modified">Última modificação em {{character.modified | date}}</span>
   </div>
 </div>
 

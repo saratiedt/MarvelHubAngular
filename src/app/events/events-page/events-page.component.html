@@ -5,8 +5,8 @@
     <h1 class="event-title">{{event.title}}</h1>
     <span class="event-description">{{event.description}}</span>
 
-    <span class="start-date">Início do evento em {{event.start | date}}</span>
-    <span class="end-date">Fim do evento em {{event.end | date}}</span>
+    <span class="start-date" *ngIf="event.start">Início do evento em {{event.start | date}}</span>
+    <span class="end-date" *ngIf="event.end">Fim do evento em {{event.end | date}}</span>
 
     <div class="sequence-events">
       <div class="event" *ngIf="event.previous">
