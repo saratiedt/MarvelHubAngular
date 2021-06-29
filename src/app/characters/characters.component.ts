@@ -22,4 +22,9 @@ export class CharactersComponent implements OnInit {
   ngOnInit(): void {
     this.characters$ = this.characterService.list();
   }
+
+  searchForCharacter(search: string): void {
+    console.log('searching for:' + search);
+    this.characters$ = this.characterService.searchForCharacter(search);
+  }
 }

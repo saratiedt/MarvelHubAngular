@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeBr from '@angular/common/locales/pt';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +19,10 @@ import { HomeOptionCardComponent } from './home/home-option-card/home-option-car
 import { EventsComponent } from './events/events.component';
 import { EventsPageComponent } from './events/events-page/events-page.component';
 import { LoadingComponent } from './shared/components/loading/loading.component';
+import { SearchComponent } from './shared/components/search/search.component';
+import { FormsModule } from '@angular/forms';
 
+registerLocaleData(localeBr, 'pt_BR');
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,18 +37,24 @@ import { LoadingComponent } from './shared/components/loading/loading.component'
     HomeOptionCardComponent,
     EventsComponent,
     EventsPageComponent,
-    LoadingComponent
+    LoadingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: MarvelInterceptor,
       multi: true
+    },
+    {
+      provide: LOCALE_ID,
+      useValue: 'pt_BR'
     }
   ],
   bootstrap: [AppComponent]

@@ -21,4 +21,8 @@ export class EventsComponent implements OnInit {
   ngOnInit(): void {
     this.events$ = this.eventService.list();
   }
+
+  searchEventName(titleName: string): void {
+    this.events$ = this.eventService.searchForEventName(titleName);
+  }
 }

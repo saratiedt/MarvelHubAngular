@@ -1,3 +1,5 @@
+<app-search (searchEvent)="searchEventName($event)"></app-search>
+
 <div class="events-wrapper" *ngIf="(events$ | async) as events; else loader">
   <app-list-item-card 
     *ngFor="let comic of events.data.results"
