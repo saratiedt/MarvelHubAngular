@@ -13,7 +13,7 @@
       <span *ngFor="let price of comic.prices">$US {{price.price}}</span>
     </div>
 
-    <div class="previews">
+    <div class="previews" *ngIf="comic.images.length > 0">
       <h3>Previews: </h3>
       <div class="previews-wrapper">
         <img *ngFor="let image of comic.images" [src]="image.path + '.' + image.extension" alt="Image preview">

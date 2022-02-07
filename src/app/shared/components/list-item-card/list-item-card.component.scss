@@ -26,18 +26,21 @@
     max-width: 67%;
     padding: 1rem;
 
-    span.item-name {
-      font-size: 1.2rem;
-      font-weight: 700;
-      line-height: 1.2rem;
-    }
-
-    span.item-description {
+    span {
       text-overflow: ellipsis;
       overflow: hidden;
       max-width: 100%;
       white-space: nowrap;
-      font-weight: 400;
+      
+      &.item-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.2rem;
+      }
+  
+      &.item-description {
+        font-weight: 400;
+      }
     }
   }
 }
