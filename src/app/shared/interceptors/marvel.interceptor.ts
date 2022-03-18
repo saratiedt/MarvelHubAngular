@@ -19,13 +19,13 @@ export class MarvelInterceptor implements HttpInterceptor {
   private requestWithKeyParameters(request: HttpRequest<any>): HttpRequest<any> {
 
     const timestamp: number = Math.floor(Date.now() / 1000);
-    const stringToEncrypt = timestamp.toString() + environment.marvel_api_private_key + environment.marvel_api_public_key;
+    const stringToEncrypt = timestamp.toString() + environment.MARVEL_API_PRIVATE_KEY + environment.MARVEL_API_PUBLIC_KEY;
     const hash: string = Md5.hashStr(stringToEncrypt);
 
     return request.clone({
       setParams: {
         ts: timestamp.toString(),
-        apikey: environment.marvel_api_public_key,
+        apikey: environment.MARVEL_API_PUBLIC_KEY,
         hash
       },
       setHeaders: {
