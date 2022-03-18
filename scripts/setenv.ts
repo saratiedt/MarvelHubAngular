@@ -5,6 +5,22 @@ require('dotenv').config();
 // read the command line arguments passed with yargs
 const environment = argv.environment;
 const isProduction = environment === 'prod';
+
+const enviromnentEntries = [
+  'MARVEL_BASE_URL',
+  'MARVEL_API_PUBLIC_KEY',
+  'MARVEL_API_PRIVATE_KEY',
+]
+
+const anyVarEmpty = enviromnentEntries.some((entry) => {
+  return !process.env[entry]
+})
+
+if (anyVarEmpty) {
+  console.error('All the required environment variables were not provided!');
+  process.exit(-1);
+}
+
 const targetPath = isProduction
   ? `./src/environments/environment.prod.ts`
   : `./src/environments/environment.ts`;
