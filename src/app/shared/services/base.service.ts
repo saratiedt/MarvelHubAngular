@@ -11,7 +11,7 @@ export abstract class BaseService<T> {
     protected http: HttpClient,
     protected endpoint: string
   ) {
-    this.baseUrl = `${environment.marvel_base_url}/${this.endpoint}`;
+    this.baseUrl = `${environment.MARVEL_BASE_URL}/${this.endpoint}`;
   }
 
   public list(): Observable<ResponseModel<T>> {
