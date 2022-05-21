@@ -1,10 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { take } from 'rxjs/operators';
 import { EventModel } from 'src/app/shared/models/event.model';
 import { EventService } from 'src/app/shared/services/event.service';
-import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-events-page',

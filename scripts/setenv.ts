@@ -5,9 +5,7 @@ require('dotenv').config();
 // read the command line arguments passed with yargs
 const environment = argv.environment;
 const isProduction = environment === 'prod';
-const environmentsFolder = './src/environments'
-
-const environmentsFolder = './src/environments'
+const environmentsFolder = './src/environments';
 
 const enviromnentEntries = [
   'MARVEL_BASE_URL',

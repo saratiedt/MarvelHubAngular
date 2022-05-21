@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CharacterPageComponent } from './characters/character-page/character-page.component';
-import { CharactersComponent } from './characters/characters.component';
-import { ComicPageComponent } from './comics/comic-page/comic-page.component';
-import { ComicsComponent } from './comics/comics.component';
-import { EventsPageComponent } from './events/events-page/events-page.component';
-import { EventsComponent } from './events/events.component';
-import { HomeComponent } from './home/home.component';
+import { CharacterPageComponent } from './modules/characters/character-page/character-page.component';
+import { CharactersComponent } from './modules/characters/characters.component';
+import { ComicPageComponent } from './modules/comics/comic-page/comic-page.component';
+import { ComicsComponent } from './modules/comics/comics.component';
+import { EventsPageComponent } from './modules/events/events-page/events-page.component';
+import { EventsComponent } from './modules/events/events.component';
+import { HomeComponent } from './modules/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
