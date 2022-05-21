@@ -1,3 +1,5 @@
+const { mkdirSync } = require('fs');
+const { existsSync } = require('fs');
 const { writeFile } = require('fs');
 const { argv } = require('yargs');
 // read environment variables from .env file
@@ -5,6 +7,7 @@ require('dotenv').config();
 // read the command line arguments passed with yargs
 const environment = argv.environment;
 const isProduction = environment === 'prod';
+const environmentsFolder = './src/environments'
 
 const enviromnentEntries = [
   'MARVEL_BASE_URL',
@@ -21,20 +24,22 @@ if (anyVarEmpty) {
   process.exit(-1);
 }
 
-const targetPath = isProduction
-  ? `./src/environments/environment.prod.ts`
-  : `./src/environments/environment.ts`;
-// we have access to our environment variables
-// in the process.env object thanks to dotenv
+const targetPath = `${environmentsFolder}/environment.ts`;
+
 const environmentFileContent = `
 export const environment = {
   production: ${isProduction},
-  MARVEL_BASE_URL: "${process.env.MARVEL_BASE_URL}",
-  MARVEL_API_PUBLIC_KEY: "${process.env.MARVEL_API_PUBLIC_KEY}",
-  MARVEL_API_PRIVATE_KEY: "${process.env.MARVEL_API_PRIVATE_KEY}"
+  MARVEL_BASE_URL: '${process.env.MARVEL_BASE_URL}',
+  MARVEL_API_PUBLIC_KEY: '${process.env.MARVEL_API_PUBLIC_KEY}',
+  MARVEL_API_PRIVATE_KEY: '${process.env.MARVEL_API_PRIVATE_KEY}'
 };
 `;
-// write the content to the respective file
+
+if (!existsSync(environmentsFolder)) {
+  console.log('Environments folder does not exists. Creating it!')
+  mkdirSync(environmentsFolder);
+}
+
 writeFile(targetPath, environmentFileContent, function (err: any) {
   if (err) {
     console.log(err);
