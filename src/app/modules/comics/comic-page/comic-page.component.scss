@@ -1,4 +1,4 @@
-@import 'src/assets/scss/variables.scss';
+@import 'abstracts/variables';
 
 .comic-page-wrapper {
   display: flex;
@@ -66,12 +66,12 @@
 
       .previews > .previews-wrapper {
         justify-content: center;
-        
+
         img {
           max-height: unset;
           max-width: 80vw;
         }
-      } 
+      }
     }
   }
 }
