@@ -5,6 +5,7 @@ require('dotenv').config();
 // read the command line arguments passed with yargs
 const environment = argv.environment;
 const isProduction = environment === 'prod';
+const environmentsFolder = './src/environments'
 
 const environmentsFolder = './src/environments'
 
@@ -31,9 +32,9 @@ const prodPath = `${environmentsFolder}/environment.prod.ts`;
 const environmentFileContent = `
 export const environment = {
   production: ${isProduction},
-  MARVEL_BASE_URL: "${process.env.MARVEL_BASE_URL}",
-  MARVEL_API_PUBLIC_KEY: "${process.env.MARVEL_API_PUBLIC_KEY}",
-  MARVEL_API_PRIVATE_KEY: "${process.env.MARVEL_API_PRIVATE_KEY}"
+  MARVEL_BASE_URL: '${process.env.MARVEL_BASE_URL}',
+  MARVEL_API_PUBLIC_KEY: '${process.env.MARVEL_API_PUBLIC_KEY}',
+  MARVEL_API_PRIVATE_KEY: '${process.env.MARVEL_API_PRIVATE_KEY}'
 };
 `;
 
