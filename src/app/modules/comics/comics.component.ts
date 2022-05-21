@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ComicModel } from '../shared/models/comic.model';
-import { ResponseModel } from '../shared/models/response.model';
-import { ComicService } from '../shared/services/comic.service';
+import { ComicModel } from 'src/app/shared/models/comic.model';
+import { ResponseModel } from 'src/app/shared/models/response.model';
+import { ComicService } from 'src/app/shared/services/comic.service';
 
 @Component({
   selector: 'app-comics',

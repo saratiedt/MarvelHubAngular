@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
-import { map, switchMap } from 'rxjs/operators';
-import { CharacterModel } from '../shared/models/character.model';
-import { ResponseModel } from '../shared/models/response.model';
-import { CharacterService } from '../shared/services/character.service';
+import { CharacterModel } from 'src/app/shared/models/character.model';
+import { ResponseModel } from 'src/app/shared/models/response.model';
+import { CharacterService } from 'src/app/shared/services/character.service';
 
 @Component({
   selector: 'app-characters',
