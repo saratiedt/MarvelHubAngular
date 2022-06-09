@@ -1,4 +1,4 @@
-@import 'src/assets/scss/variables.scss';
+@use 'abstracts/variables' as *;
 
 header {
   min-height: 80px;
