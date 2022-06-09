@@ -1,4 +1,4 @@
-@import 'src/assets/scss/variables';
+@use 'abstracts/variables' as *;
 
 .event-page-wrapper {
   display: flex;
@@ -29,7 +29,7 @@
 
     .sequence-events {
       margin-top: 3rem;
-      
+
       display: flex;
       gap: 2rem;
 
