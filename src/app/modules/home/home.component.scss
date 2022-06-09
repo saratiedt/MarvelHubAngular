@@ -1,9 +1,8 @@
-@import 'abstracts/variables';
+@use 'main' as *;
 
 .home-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   width: 100%;
   padding: 24px 0;
 

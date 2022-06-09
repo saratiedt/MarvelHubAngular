@@ -1,14 +1,15 @@
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-@import 'abstracts/variables';
+@charset 'utf-8';
 
-@import 'base/reset';
-@import 'base/structure';
-@import 'base/typography';
+@forward 'abstracts/functions';
+@forward 'abstracts/mixins';
+@forward 'abstracts/placeholders';
+@forward 'abstracts/variables';
 
-@import 'layout/grid';
+@forward 'base/reset';
+@forward 'base/typography';
 
-@import 'themes/dark';
+@forward 'layout/grid';
 
-@import 'shame';
+@forward 'themes/dark';
+
+@forward 'shame';
