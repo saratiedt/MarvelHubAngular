@@ -4,7 +4,9 @@ const { argv } = require('yargs');
 require('dotenv').config();
 // read the command line arguments passed with yargs
 const environment = argv.environment;
-const isProduction = environment === 'prod';
+const dockerEnvironment = process.env['ENVIRONMENT'];
+
+const isProduction = (environment === 'prod' || dockerEnvironment === 'prod');
 const environmentsFolder = './src/environments';
 
 const enviromnentEntries = [
