@@ -12,7 +12,7 @@ import { HeaderComponent } from './core/components/header/header.component';
 import { ListItemCardComponent } from './shared/components/list-item-card/list-item-card.component';
 import { LoadingComponent } from './shared/components/loading/loading.component';
 import { SearchComponent } from './shared/components/search/search.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CharacterPageComponent } from './modules/characters/character-page/character-page.component';
 import { CharactersComponent } from './modules/characters/characters.component';
 import { ComicPageComponent } from './modules/comics/comic-page/comic-page.component';
@@ -44,7 +44,8 @@ registerLocaleData(localeBr, 'pt_BR');
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
